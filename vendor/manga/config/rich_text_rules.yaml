@@ -1,0 +1,31 @@
+# 富文本规则配置
+# 界面顺序：通用（始终执行）-> 横排 / 竖排；YAML 键为 common -> horizontal / vertical。
+# 规则匹配文本替换完成后的译文。自动规则之间后面的规则可覆盖前面的同字段，
+# 但已有手工富文本的相同字段会保留，自动规则只追加尚未设置的字段。
+common:
+  - enabled: false
+    pattern: "示例"
+    regex: false
+    style: {}
+    ruby: ""
+    tcy: false
+    comment: "示例规则（启用前请配置需要的富文本样式）"
+
+horizontal: []
+vertical:
+  - enabled: true
+    pattern: '["''ー⸺～﹏●•〖〗［］]'
+    regex: true
+    style:
+      transform:
+        rotation: -90
+    ruby: ""
+    tcy: false
+    comment: "竖排中将无专用替换字形的符号包装为富文本并旋转90度（引擎正角度为逆时针，竖排取顺时针即 -90；有竖排形字符的括号已在文本替换表映射）"
+  - enabled: true
+    pattern: '[!?！？]{2,4}'
+    regex: true
+    style: {}
+    ruby: ""
+    tcy: true
+    comment: "竖排中将连续的问号和感叹号按每组 2–4 个应用纵中横"

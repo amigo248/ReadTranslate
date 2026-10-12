@@ -1,0 +1,15 @@
+{
+  "project": "https://github.com/hgmzhn/manga-translator-ui",
+  "revision": "f0307a063214f915f2b1d6e5cd3233f3bf78339f",
+  "license": "GPL-3.0",
+  "contents": "Image-processing core with unused local-text backend removed, Python runtime, selected models and fonts",
+  "mocr": {
+    "model": "kha-white/manga-ocr-base",
+    "source": "https://huggingface.co/kha-white/manga-ocr-base",
+    "files": "Local copies, dereferenced from reader model cache"
+  },
+  "compact_payload": "Removed Python self-tests/development files and demonstration media; runtime modules/models/fonts retained",
+  "runtime_test_helper": "NumPy testing imports _core/tests/_natype.py during SciPy import; required helper retained locally",
+  "cloud_only_release": "2026-10-10: local text translator, registration, options and server metadata removed; original image-processing functions retained",
+  "reader_runtime_cleanup": "Removed unused pip tooling, Tk GUI and regenerable bytecode caches; offline OCR, LaMa and all SR schemes verified"
+}

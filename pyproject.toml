@@ -1,0 +1,6 @@
+[project]
+name = "read-translate"
+version = "0.1.0"
+description = "本地漫画与小说书库、日译中和可编辑译本"
+requires-python = ">=3.11"
+

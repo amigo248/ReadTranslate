@@ -1,0 +1,12 @@
+{
+  "model": "FFDNet RGB",
+  "license": "GPL-3.0-or-later",
+  "author": "Matias Tassano, 2018",
+  "weight_url": "https://github.com/zyddnys/manga-image-translator/releases/download/beta-0.3/manga-colorization-v2-net_rgb.pth",
+  "sha256": "0fe98bfd2ac870b15f360661b1c4789eecefc6dc2e4462842a0dd15e149a0433",
+  "size": 3435567,
+  "mtu_reference": "manga_translator/colorization/manga_colorization_v2.py; manga_colorization_v2_utils/denoising",
+  "stage": "local input denoising before colorization; no OCR, detection, translation or text rendering",
+  "reader_extension": "Applied to Klein, Gemini and OpenAI inputs; MTU's API colorizers do not consume denoise_sigma. Default disabled for compatibility.",
+  "normalization": "RGB preserved; odd dimensions edge padded; longest side limited to 1200 then restored as in MTU"
+}

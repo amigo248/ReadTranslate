@@ -1,0 +1,43 @@
+# Local application data and generated outputs
+data/
+dist/
+releases/
+.release-work/
+build/
+engines/
+exports/
+samples/
+backups/
+diagnostics/
+
+# Private configuration and credentials
+.env
+.env.*
+!.env.example
+settings.json
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Development and temporary artifacts
+.venv/
+.cleanup-work/
+.reader-maintenance/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.test*/
+pytest-cache-files-*/
+*.log
+*.jsonl
+*.tmp
+*.bak
+*.exe
+*.dll
+阅译维护源码.zip
+清理结果.json
+
+# Publication archives and imported book containers
+*.zip
+*.cbz
+*.epub
